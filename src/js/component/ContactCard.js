@@ -22,12 +22,12 @@ export const ContactCard = props => {
 
 	return (
 		<li className="list-group-item">
-			<div className="row w-100">
+			<div className="row w-100 align-items-center">
 				<div className="col-12 col-sm-6 col-md-3 px-0">
-					<img src={rigoBaby} alt="Mike Anamendolla" className="rounded-circle mx-auto d-block img-fluid" />
+					<img src={rigoBaby} alt="Mike Anamendolla" className="rounded-circle mx-auto d-block img-fluid" style={{maxHeight:75+"%",maxWidth:75+"%"}}/>
 				</div>
-				<div className="col-12 col-sm-6 col-md-9 text-center text-sm-left">
-					<div className="float-right">
+				<div className="col-12 col-sm-6 col-md-9 text-sm-left">
+					<div className="text-end">
 						<Link
 							className="btn"
 							onClick={() => {
@@ -36,14 +36,6 @@ export const ContactCard = props => {
 							to={`update/${props.id}`}>
 							<i className="fas fa-pencil-alt mr-3" />
 						</Link>
-						{/* <button
-							className="btn"
-							onClick={() => {
-								navigate(`update/${props.id}`);
-								props.onDelete();
-							}}>
-							<i className="fas fa-pencil-alt mr-3" />
-						</button> */}
 						<button
 							className="btn"
 							onClick={() => {
@@ -53,10 +45,10 @@ export const ContactCard = props => {
 							<i className="fas fa-trash-alt" />
 						</button>
 					</div>
-					<label className="name lead">{state.name}</label>
+					<h1 className="name lead">{state.name}</h1>
 					<br />
 					<i className="fas fa-map-marker-alt text-muted mr-3" />
-					<span className="text-muted">{state.address}</span>
+					<span className="text-muted">{state.phone}</span>
 					<br />
 					<span
 						className="fa fa-phone fa-fw text-muted mr-3"
@@ -64,7 +56,7 @@ export const ContactCard = props => {
 						title=""
 						data-original-title="(870) 288-4149"
 					/>
-					<span className="text-muted small">{state.phone}</span>
+					<span className="text-muted small">{state.address}</span>
 					<br />
 					<span
 						className="fa fa-envelope fa-fw text-muted mr-3"
