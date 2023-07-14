@@ -48,7 +48,7 @@ export const ContactCard = props => {
 					<h1 className="name lead">{state.name}</h1>
 					<br />
 					<i className="fas fa-map-marker-alt text-muted mr-3" />
-					<span className="text-muted">{state.phone}</span>
+					<span className="text-muted">{state.address}</span>
 					<br />
 					<span
 						className="fa fa-phone fa-fw text-muted mr-3"
@@ -56,7 +56,7 @@ export const ContactCard = props => {
 						title=""
 						data-original-title="(870) 288-4149"
 					/>
-					<span className="text-muted small">{state.address}</span>
+					<span className="text-muted small">{state.phone}</span>
 					<br />
 					<span
 						className="fa fa-envelope fa-fw text-muted mr-3"

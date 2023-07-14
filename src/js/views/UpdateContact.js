@@ -26,7 +26,7 @@ export const Update = () => {
 							type="text"
 							onChange={e => setFullName(e.target.value)}
 							className="form-control"
-							placeholder="Full Name"
+							placeholder={fullName}
 						/>
 					</div>
 					<div className="form-group">
@@ -35,7 +35,7 @@ export const Update = () => {
 							type="email"
 							onChange={e => setEmail(e.target.value)}
 							className="form-control"
-							placeholder="Enter email"
+							placeholder={email}
 						/>
 					</div>
 					<div className="form-group">
@@ -44,7 +44,7 @@ export const Update = () => {
 							type="phone"
 							onChange={e => setPhone(e.target.value)}
 							className="form-control"
-							placeholder="Enter phone"
+							placeholder={phone}
 						/>
 					</div>
 					<div className="form-group">
@@ -53,7 +53,7 @@ export const Update = () => {
 							type="text"
 							onChange={e => setAddress(e.target.value)}
 							className="form-control"
-							placeholder="Enter address"
+							placeholder={address}
 						/>
 					</div>
 					<button type="submit" className="btn btn-primary form-control">
